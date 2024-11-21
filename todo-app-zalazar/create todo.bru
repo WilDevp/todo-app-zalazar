@@ -1,0 +1,26 @@
+meta {
+  name: create todo
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/todos
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c3VhcmlvMSIsImlhdCI6MTczMjA2MzQzMCwiZXhwIjoxNzMyMDY3MDMwfQ.Arwhd-_8e7gJaX9FQbJf5jIj4TOBG-Y8S-QRG34sNM4
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c3VhcmlvMSIsImlhdCI6MTczMjA2Mzc1NywiZXhwIjoxNzMyMDY3MzU3fQ.F04lSmX5BuHZjxzM9hOb98B3SSGnJPnWMXhj_-L73go
+}
+
+body:json {
+  {
+    "task": "terminar de codear"
+  }
+}

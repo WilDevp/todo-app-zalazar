@@ -1,0 +1,19 @@
+meta {
+  name: get todos
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/todos
+  body: none
+  auth: bearer
+}
+
+headers {
+  ~Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c3VhcmlvMSIsImlhdCI6MTczMjA2Mzc1NywiZXhwIjoxNzMyMDY3MzU3fQ.F04lSmX5BuHZjxzM9hOb98B3SSGnJPnWMXhj_-L73go
+}
